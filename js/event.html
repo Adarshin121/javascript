@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Event Example</title>
+</head>
+<body>
+
+<button id="myButton">Click me</button>
+
+<script src="events.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #weatherImage {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weather App</h1>
+
+  <script>
+    // Simulating the current weather conditions (for simplicity)
+    var isSunny = true;
+    var temperature = 25;
+
+    // Display different messages and images based on weather conditions
+    if (isSunny) {
+      document.write("<p>It's a sunny day!</p>");
+      document.getElementById("weatherImage").src = "https://www.shutterstock.com/image-photo/beautiful-blue-sky-clouds-sun-260nw-1209009610.jpg";
+    } else {
+      document.write("<p>It's not sunny today.</p>");
+      document.getElementById("weatherImage").src = "cloudy.jpg";
+    }
+
+    // Display temperature information
+    document.write("<p>Current temperature: " + temperature + "°C</p>");
+  </script>
+
+  <!-- Image container for weather illustration -->
+  <div>
+    <img id="weatherImage" alt="Weather Image">
+  </div>
+
+</body>
+</html>
